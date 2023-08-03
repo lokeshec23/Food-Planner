@@ -11,21 +11,35 @@
         FoodCook Planner
     </header>
 
-    <main>
-         <div class="input-container">
+    <main id="main">
+        
+           <div class="input-container">
             <input type="text" name="" id="input-value" placeholder="I like to eat...." class="input-food">
-            <button class="input-btn" id="btn">save</button>
+            <button class="input-btn" id="btn">Add</button>
          </div>
 
          
             <ul id="food-container" class="food-container">
-                <li class="food-item">Sambar</li>
-                <li class="food-item"> Rasam</li>
-                <li class="food-item">Curd</li>    
+                <li class="food-item">
+                    <div>Sambar</div>
+                    <button type="button" class="edit-btn">Edit</button> 
+                    <button type="button" onclick="deleteItem(event);" class="delete-btn">Delete</button>
+                </li>
+                <li class="food-item"> 
+                    <div>Dosa</div>
+                    <button type="button" class="edit-btn">Edit</button>
+                    <button type="button" onclick="deleteItem(event);" class="delete-btn">Delete</button>
+                </li>
+                <li class="food-item">
+                    <div>Tea</div>
+                    <button type="button" class="edit-btn">Edit</button>
+                    <button type="button" onclick="deleteItem(event);"  class="delete-btn">Delete</button>
+                </li>    
             </ul>
      
     </main>  
 
     <script src="./js/main.js"></script>
+    <script src="./js/alert.js"></script>
 </body>
 </html>
