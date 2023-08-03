@@ -14,7 +14,7 @@ html, body{
 
 /* header */
 header{
-    padding: 10px;
+    padding: 20px;
     text-align: center;
     background-color: #1b63ff;
     color: #fff;
@@ -41,8 +41,9 @@ main > div > p{
     display: flex;
     justify-content: space-between;
     background: #fff ;
-    padding: 30px;
-   
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px rgb(231, 231, 231);
 }
 
 /* form input */
@@ -50,9 +51,10 @@ main > div > p{
     padding: 5px 10px;
     outline: none;
     width: 100%;
-    margin-right: 10px;
+    margin-right: 10px; 
     border-radius: 5px;
-    border: 1px solid gray;
+    border: 1px solid ghostwhite; 
+    background-color: #f2f2f2; 
    
 }
 
@@ -80,8 +82,71 @@ main > div > p{
      font-size: 14px;
      border: 1px solid rgb(182, 180, 180);
      margin: 10px 0;
-    color: gray; 
+     color: gray; 
+}
+
+.food-item{
+    display: flex;
+    justify-content: space-between;
+}
+
+.food-item:hover{
+    background: #1b63ff;
+    color: #fff;
+}
+
+/* a lert */
+.alert{
+    padding: 10px 20px 10px 10px;
+    background-color: #29a746;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: left;
+    border-left: 5px solid green;
+    font-weight: 500;
+    margin: 10px 0;
+    display: flex;
+    justify-content: space-between;
 }
 
 
+/* alert msg */
+.alert button{
+    background: transparent;
+    border: none;
+    color: #fff;
+    cursor: pointer;
+}
 
+.delete-btn{
+    background-color: rgb(173, 0, 0);
+    color: #fff;
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid rgb(173,0,0);
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.edit-btn{
+    background: rgb(0, 173, 0);
+    color: #fff;
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px solid rgb(0,173,0);
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.error{
+    padding: 10px 20px 10px 10px;
+    background-color: rgb(173, 0, 0);
+    color: #fff;
+    font-size: 12px;
+    border-radius: 5px;
+    text-align: left;
+    border-left: 5px solid rgb(173, 0, 0);
+    font-weight: 500;
+    margin: 10px 0;
+}
