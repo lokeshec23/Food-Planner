@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+html, body{
+    background-color:  aliceblue;
+}
+
+/* header */
+header{
+    padding: 10px;
+    text-align: center;
+    background-color: #1b63ff;
+    color: #fff;
+    font-size: 20px;
+     
+}
+
+main{ 
+    margin: 20px auto;
+    width: 600px;
+    text-align: center;
+
+}
+
+main > div > h1 {
+    font-size: 18px;
+}
+
+main > div > p{
+    font-size: 14px;
+}
+
+.input-container{
+    display: flex;
+    justify-content: space-between;
+    background: #fff ;
+    padding: 30px;
+   
+}
+
+/* form input */
+.input-food{
+    padding: 5px 10px;
+    outline: none;
+    width: 100%;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid gray;
+   
+}
+
+.input-btn{
+    padding: 6px 10px;
+    background-color: #1b63ff;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+
+}
+
+.food-container{
+    margin: 20px 0; 
+    background: #fff;
+    margin: 20px 0;
+    list-style: none;
+    padding: 20px;
+    text-align: left;
+}
+
+.food-container .food-item{
+     padding: 5px;
+     font-size: 14px;
+     border: 1px solid rgb(182, 180, 180);
+     margin: 10px 0;
+    color: gray; 
+}
+
+
+
